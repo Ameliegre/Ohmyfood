@@ -1,4 +1,7 @@
-.btn {
-    @include btn
+.explore-container_btn {
+    @include main_btn
 }
 
+.filter-container_btn {
+    @include filter_btn
+}

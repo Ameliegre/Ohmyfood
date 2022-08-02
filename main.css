@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -12,10 +11,6 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-h1 h2 h3 {
-  font-family: "Shrikhand", sans-serif;
-}
-
 #location {
   font-size: 20px;
 }
@@ -23,32 +18,71 @@ h1 h2 h3 {
   font-weight: 500;
 }
 
-.explore_container p {
+.explore-container p {
   font-weight: 100;
+  font-size: 18px;
 }
-
-.btn {
+.explore-container_btn {
   font-size: 18px;
 }
 
-.btn {
+.filter-container_btn_title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.explore-container_btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   color: #fff;
   padding: 15px 22px;
   border-radius: 34px;
+  border: transparent;
+}
+
+.filter-container_btn {
+  padding: 0;
+  height: 18%;
+  margin: 10px 0px;
+  border: transparent;
+  border-radius: 26px;
+  box-shadow: 4px 8px 9px RGB(217 217 217);
 }
 
 header {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: #fff;
 }
 header img {
   height: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 12%;
+  text-align: center;
+}
+.explore-container p {
+  padding: 20px 0px;
+}
+
+.filter-container {
+  background-color: #fff;
+  padding: 0px 28px;
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+}
+.filter-container h2 {
+  padding: 45px 0px 20px 0px;
+}
+
+/* Page accueil*/
 #location {
   display: flex;
   flex-direction: row;
@@ -62,13 +96,23 @@ header img {
   padding-left: 20px;
 }
 
-.explore_container {
+.filter-container span {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin: 10% 18%;
-  text-align: center;
 }
-.explore_container p {
-  padding: 20px 0px;
+.filter-container_btn_number {
+  color: #fff;
+  background-color: #9356dc;
+  padding: 5px 9px;
+  border-radius: 15px;
+  margin-left: -12px;
+}
+.filter-container_btn_icon {
+  color: rgb(115, 115, 115);
+  font-size: 18px;
+  margin: 0px 20px;
+}
+.filter-container_btn_icon .fa-ellipsis-vertical {
+  margin-right: 2px;
 }/*# sourceMappingURL=main.css.map */

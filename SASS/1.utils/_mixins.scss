@@ -1,6 +1,20 @@
-@mixin btn {
+@mixin main_btn {
     background: linear-gradient(to bottom right, $colour-secondary,$colour-primary);
     color:$colour-white;
     padding: 15px 22px;
     border-radius: 34px;
+    border: transparent;
+}
+
+@mixin filter_btn {
+    padding: 0;
+    height: 18%;
+    margin: 10px 0px;
+    border: transparent;
+    border-radius: 26px;
+    box-shadow: 4px 8px 9px RGB(217 217 217);
+}
+
+@mixin title {
+    padding: 45px 0px 20px 0px;
 }

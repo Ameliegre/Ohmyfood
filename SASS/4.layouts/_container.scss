@@ -1,0 +1,21 @@
+.explore-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 12%;
+    text-align: center;
+    p {
+        padding:20px 0px;
+    }
+}
+
+.filter-container {
+    background-color: $colour-white;
+    padding:0px 28px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    h2 {
+        @include title;
+    }  
+}

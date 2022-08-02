@@ -10,20 +10,50 @@
 	    <script src="https://kit.fontawesome.com/ad4d97024a.js" crossorigin="anonymous"></script>
     </head>
 
-    <header>
-        <img id="logo" src="images/logo/ohmyfood.png" alt="Logo">
-    </header>
- 
     <body>
+        <header>
+            <img id="logo" src="images/logo/ohmyfood.png" alt="Logo">
+        </header>
+ 
+    <main>
         <div id="location"> 
                 <i class="fas fa-map-marker-alt"></i>
                 <p>Paris, Belleville</p>
         </div>
 
-        <section class="explore_container">
+        <section class="explore-container">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <div class="btn">Explorer nos restaurants</div>
+            <button class="explore-container_btn" type="button">Explorer nos restaurants</button>
         </section>
+
+        <section class="filter-container">
+            <h2>Fonctionnement</h2>
+            <button class="filter-container_btn" type="button">
+                <span>
+                    <span class="filter-container_btn_number">1</span>
+                    <span class="filter-container_btn_icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    <span class="filter-container_btn_title">Choisissez un restaurant</span>
+                </span>
+            </button>
+            <button class="filter-container_btn" type="button">
+                <span>
+                    <span class="filter-container_btn_number">2</span>
+                    <span class="filter-container_btn_icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span class="filter-container_btn_title">Composez votre menu</span>
+                </span>
+            </button>
+            <button class="filter-container_btn" type="button">
+                <span>
+                    <span class="filter-container_btn_number">3</span>
+                    <span class="filter-container_btn_icon"><i class="fa-solid fa-store"></i></span>
+                    <span class="filter-container_btn_title">Dégustez au restaurant</span>
+                </span>
+            </button>
+        </section>
+    </main>    
     </body>
     

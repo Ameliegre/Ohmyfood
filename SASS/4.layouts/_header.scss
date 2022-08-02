@@ -2,10 +2,11 @@ header {
     display: flex;
     justify-content: center;
     width: 100%; 
+    background-color: $colour-white;
     img {
         height: 35px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 15px;
     }
 }
 
