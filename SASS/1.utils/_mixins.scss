@@ -1,0 +1,6 @@
+@mixin btn {
+    background: linear-gradient(to bottom right, $colour-secondary,$colour-primary);
+    color:$colour-white;
+    padding: 15px 22px;
+    border-radius: 34px;
+}

@@ -1,0 +1,25 @@
+#location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(230 230 230);
+    box-shadow: 0px 4px 8px rgb(202 202 202) inset;
+    p {
+        padding-left: 20px;
+    }
+}
+
+.explore_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 18%;
+    text-align: center;
+    p {
+        padding:20px 0px;
+    }
+}
+
+
