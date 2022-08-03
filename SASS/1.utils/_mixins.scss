@@ -20,3 +20,26 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin footer {
+    background-color: $colour-footer;
+    padding:28px;
+    color:$colour-white; 
+    .footer_body_icon {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        margin:12px 15px 0px 0px ;
+        i {
+            padding-bottom: 13px;
+        }
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            padding-top:10px;
+            font-size: 18px;
+        }
+    }
+}
