@@ -6,12 +6,8 @@ body {
 
 h1 {
     font-size: 28px;
-    padding: 0px 20px;
-}
-
-h2 {
-    padding: 45px 0px 20px 0px;
-}  
+    padding: 0px 30px;
+} 
 
 h3 {
     font-size: 22px;
@@ -48,3 +44,10 @@ p {
     padding: 8px 14px;
 }
  
+.footer_title {
+    font-family: 'Shrikhand';
+    color:$colour-white;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+

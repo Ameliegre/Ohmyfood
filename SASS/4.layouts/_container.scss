@@ -17,4 +17,9 @@
 
 .restaurant-container {
     @include container;
+    margin-bottom: 62px;
+}
+
+footer {
+    @include footer; 
 }

@@ -7,17 +7,17 @@ body {
   background-color: rgb(246, 246, 246);
 }
 
+h2 {
+  padding: 45px 0px 20px 0px;
+}
+
 body {
   font-family: "roboto", sans-serif;
 }
 
 h1 {
   font-size: 28px;
-  padding: 0px 20px;
-}
-
-h2 {
-  padding: 45px 0px 20px 0px;
+  padding: 0px 30px;
 }
 
 h3 {
@@ -51,6 +51,13 @@ p {
   font-size: 16px;
   font-weight: 600;
   padding: 8px 14px;
+}
+
+.footer_title {
+  font-family: "Shrikhand";
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .explore-container_btn {
@@ -105,6 +112,30 @@ header img {
   padding: 0px 28px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 62px;
+}
+
+footer {
+  background-color: rgb(53, 53, 53);
+  padding: 28px;
+  color: #fff;
+}
+footer .footer_body_icon {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin: 12px 15px 0px 0px;
+}
+footer .footer_body_icon i {
+  padding-bottom: 13px;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 18px;
 }
 
 /* Page accueil*/
