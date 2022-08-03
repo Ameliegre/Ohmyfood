@@ -4,6 +4,25 @@ body {
     font-family: 'roboto',sans-serif;
 }
 
+h1 {
+    font-size: 28px;
+    padding: 0px 20px;
+}
+
+h2 {
+    padding: 45px 0px 20px 0px;
+}  
+
+h3 {
+    font-size: 22px;
+    padding-bottom: 6px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 20px;
+}
+
 #location {
     font-size: 20px;
     p {
@@ -12,17 +31,20 @@ body {
 }
 
 .explore-container {
-    p {
-        font-weight: 100;
-        font-size: 18px;
-    }
     &_btn {
         font-size: 18px;
     }
 }
 
 .filter-container_btn_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.restaurant-card_new {
+    color: rgb(20 139 107);
     font-size: 16px;
     font-weight: 600;
+    padding: 8px 14px;
 }
  
