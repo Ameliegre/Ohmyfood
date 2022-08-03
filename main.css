@@ -42,7 +42,7 @@ p {
 }
 
 .filter-container_btn_title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -135,7 +135,7 @@ header img {
 }
 .filter-container_btn_icon {
   color: rgb(115, 115, 115);
-  font-size: 18px;
+  font-size: 20px;
   margin: 0px 20px;
 }
 .filter-container_btn_icon .fa-ellipsis-vertical {
