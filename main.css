@@ -21,13 +21,14 @@ h1 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
   padding-bottom: 6px;
+  font-weight: 500;
 }
 
 p {
   font-weight: 100;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #location {
@@ -42,7 +43,7 @@ p {
 }
 
 .filter-container_btn_title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -72,6 +73,13 @@ p {
 .menu-body_title {
   font-family: "Shrikhand";
   font-size: 26px;
+}
+
+.menu-body_card_text {
+  font-size: 15px;
+}
+.menu-body_card_title {
+  font-weight: 200;
 }
 
 .explore-container_btn {
@@ -241,7 +249,7 @@ header .disactived {
   margin: 24px 16px;
 }
 .restaurant-card_body_icon {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: -12px;
   margin-right: 10px;
   font-weight: 100;
@@ -273,9 +281,9 @@ main img {
 
 .menu-body {
   width: 100%;
-  position: absolute;
+  /*position: absolute;*/
   background-color: rgb(246, 246, 246);
-  bottom: -226px;
+  /*top: 226px;*/
   border-radius: 52px 52px 0px 0px;
 }
 .menu-body_title {
@@ -283,18 +291,19 @@ main img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 24px;
+  margin: 30px 24px 0px 24px;
 }
 .menu-body_card_title {
   width: 10%;
   text-transform: uppercase;
   border-bottom: 3px solid rgb(142, 222, 202);
-  margin-left: 24px;
-  padding-bottom: 10px;
+  margin: 40px 24px 0px 24px;
+  padding-bottom: 6px;
 }
 .menu-body_card_text {
-  margin: 24px;
-  padding: 15px 10px;
+  background-color: #fff;
+  margin: 15px;
+  padding: 15px 20px 15px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

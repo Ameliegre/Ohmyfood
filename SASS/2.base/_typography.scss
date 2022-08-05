@@ -10,13 +10,14 @@ h1 {
 } 
 
 h3 {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 6px;
+    font-weight: 500;
 }
 
 p {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #location {
@@ -33,7 +34,7 @@ p {
 }
 
 .filter-container_btn_title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -64,3 +65,13 @@ p {
     font-family: 'Shrikhand';
     font-size: 26px;
 }
+
+.menu-body {
+    &_card_text {
+        font-size: 15px;
+    }
+    &_card_title {
+        font-weight: 200;
+    }
+}
+
