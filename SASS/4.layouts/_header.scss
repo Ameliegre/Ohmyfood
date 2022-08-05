@@ -1,13 +1,17 @@
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%; 
     background-color: $colour-white;
     img {
         height: 35px;
-        padding-top: 20px;
-        padding-bottom: 15px;
+        padding: 20px 60px 15px 0px;
     }
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color:black;
+     }
 }
-
-
