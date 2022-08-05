@@ -282,6 +282,7 @@ main img {
   background-color: rgb(246, 246, 246);
   border-radius: 52px 52px 0px 0px;
   margin-bottom: 30px;
+  margin-top: -60px;
 }
 .menu-body_title {
   display: flex;
