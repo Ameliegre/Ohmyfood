@@ -82,12 +82,14 @@ p {
   font-weight: 200;
 }
 
-.explore-container_btn {
+.main_btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   color: rgb(246, 246, 246);
-  padding: 15px 22px;
+  padding: 15px 20px;
   border-radius: 34px;
   border: transparent;
+  align-self: center;
+  font-size: 16px;
 }
 
 .filter-container_btn {
@@ -143,17 +145,19 @@ header img {
   padding: 0px 28px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 62px;
 }
 
-menu {
-  width: 100%;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 footer {
   background-color: rgb(53, 53, 53);
   padding: 28px;
   color: #fff;
+  margin-top: 70px;
 }
 footer .footer_body_icon {
   float: left;
@@ -276,15 +280,13 @@ main img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
 }
 
 .menu-body {
   width: 100%;
-  /*position: absolute;*/
   background-color: rgb(246, 246, 246);
-  /*top: 226px;*/
   border-radius: 52px 52px 0px 0px;
+  margin-bottom: 30px;
 }
 .menu-body_title {
   display: flex;
@@ -311,4 +313,8 @@ main img {
 }
 .menu-body strong {
   align-self: flex-end;
+}
+
+.main_btn span {
+  padding: 20px 30px;
 }/*# sourceMappingURL=main.css.map */

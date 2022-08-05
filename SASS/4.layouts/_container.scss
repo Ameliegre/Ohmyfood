@@ -17,10 +17,11 @@
 
 .restaurant-container {
     @include container;
-    margin-bottom: 62px;
 }
 
-menu {
-    width: 100%;
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 

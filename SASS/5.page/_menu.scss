@@ -17,15 +17,13 @@ main img {
     height: 300px;
     width: 100%;
     object-fit: cover;
-    position: relative;
 }
 
 .menu-body {
    width: 100%;
-   /*position: absolute;*/
    background-color: $colour-background;
-   /*top: 226px;*/
    border-radius: 52px 52px 0px 0px;
+   margin-bottom: 30px;
    &_title {
       display: flex;
       flex-direction: row;
@@ -54,3 +52,8 @@ main img {
    }
 }
 
+.main_btn {
+   span {
+      padding: 20px 30px;
+   }
+}
