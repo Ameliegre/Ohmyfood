@@ -182,6 +182,10 @@ footer ul li {
   padding-top: 12px;
   font-size: 18px;
 }
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .rotate {
   margin-bottom: 4px;

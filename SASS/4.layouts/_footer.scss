@@ -18,9 +18,15 @@ footer {
             list-style: none;
             padding-top:12px;
             font-size: 18px;
-        }
+            a {
+                text-decoration: none;
+                color: $colour-white;
+            }
+        } 
     }
 }
+
+
 
 .rotate {
     margin-bottom: 4px;
