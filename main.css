@@ -132,11 +132,11 @@ p {
 
 #logo {
   height: 35px;
-  padding: 20px 40px 15px 60px;
+  margin: 20px 40px 15px 60px;
 }
 @media screen and (min-width: 426px) and (max-width: 1023px) {
   #logo {
-    padding: 20px 0px 15px 18px;
+    margin: 20px 0px 15px 18px;
   }
 }
 
@@ -144,12 +144,12 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
 .header_menu a {
-  font-size: 20px;
+  font-size: 28px;
   text-decoration: none;
   color: black;
+  padding-left: 20px;
 }
 
 .explore-container {
