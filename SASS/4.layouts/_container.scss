@@ -7,16 +7,33 @@
     p {
         padding:20px 0px;
     }
+    @include tablet-only {
+       margin:5% 5%;
+    }
+    @include desktop-only {
+        margin:3% 5%;
+     }
 }
 
 .filter-container {
     background-color: $colour-white;
     @include container;
     height: 430px;
+    @include desktop-only {
+        height:350px;
+    }
 }
 
 .restaurant-container {
     @include container;
+    .all_card {
+        @include desktop-only {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 10%;
+        }
+    }
 }
 
 .menu {

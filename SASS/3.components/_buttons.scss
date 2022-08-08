@@ -3,7 +3,12 @@
 }
 
 .filter-container_btn {
-    @include filter_btn
+    @include filter_btn;
+    @include desktop-only {
+        padding-right: 20px;
+        width: 45%;
+
+    }
 }
 
 .menu-body_card_text {

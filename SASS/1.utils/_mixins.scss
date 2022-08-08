@@ -9,8 +9,9 @@
 }
 
 @mixin filter_btn {
+    width: 100%;
     padding: 0;
-    height: 18%;
+    height: 70px;
     margin: 10px 0px;
     border: transparent;
     border-radius: 24px;
@@ -21,6 +22,9 @@
     padding:0px 28px;
     display: flex;
     flex-direction: column;
+    @include tablet-only {
+        padding: 0px 100px;
+    }
 }
 
 @mixin tablet-only {

@@ -3,6 +3,14 @@ footer {
     padding:28px;
     color:$colour-white; 
     margin-top: 70px;
+    .footer_title {
+        @include tablet-only {
+            padding: 0% 40%;
+        }
+        @include desktop-only {
+            padding: 0% 40%;
+        }
+    }
     .footer_body_icon {
         float: left;
         display: flex;
@@ -23,6 +31,18 @@ footer {
                 color: $colour-white;
             }
         } 
+    }
+    .list {
+        @include tablet-only {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include desktop-only {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }
 

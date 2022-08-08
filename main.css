@@ -6,6 +6,11 @@
 body {
   background-color: rgb(246, 246, 246);
 }
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  body {
+    margin: 0% 8%;
+  }
+}
 
 h2 {
   padding: 45px 0px 20px 0px;
@@ -93,17 +98,25 @@ p {
 }
 
 .filter-container_btn {
+  width: 100%;
   padding: 0;
-  height: 18%;
+  height: 70px;
   margin: 10px 0px;
   border: transparent;
   border-radius: 24px;
   box-shadow: 4px 8px 9px RGB(217 217 217);
 }
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .filter-container_btn {
+    padding-right: 20px;
+    width: 45%;
+  }
+}
 
 .menu-body_card_text {
+  width: 100%;
   padding: 0;
-  height: 18%;
+  height: 70px;
   margin: 10px 0px;
   border: transparent;
   border-radius: 24px;
@@ -162,6 +175,16 @@ p {
 .explore-container p {
   padding: 20px 0px;
 }
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  .explore-container {
+    margin: 5% 5%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .explore-container {
+    margin: 3% 5%;
+  }
+}
 
 .filter-container {
   background-color: #fff;
@@ -170,11 +193,35 @@ p {
   flex-direction: column;
   height: 430px;
 }
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  .filter-container {
+    padding: 0px 100px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .filter-container {
+    height: 350px;
+  }
+}
 
 .restaurant-container {
   padding: 0px 28px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  .restaurant-container {
+    padding: 0px 100px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .restaurant-container .all_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+  }
 }
 
 .menu {
@@ -188,6 +235,16 @@ footer {
   padding: 28px;
   color: #fff;
   margin-top: 70px;
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  footer .footer_title {
+    padding: 0% 40%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  footer .footer_title {
+    padding: 0% 40%;
+  }
 }
 footer .footer_body_icon {
   float: left;
@@ -209,6 +266,20 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: #fff;
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  footer .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  footer .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .rotate {
@@ -247,6 +318,14 @@ footer ul li a {
   padding-left: 20px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .filter-container .all-filter_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 50px;
+  }
+}
 .filter-container span {
   display: flex;
   flex-direction: row;
@@ -275,6 +354,11 @@ footer ul li a {
   box-shadow: 4px 8px 9px RGB(217 217 217);
   position: relative;
 }
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .restaurant-card {
+    width: 45%;
+  }
+}
 .restaurant-card a {
   text-decoration: none;
   color: black;
@@ -297,7 +381,7 @@ footer ul li a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 16px;
+  padding: 14px 16px;
 }
 .restaurant-card_body_icon {
   font-size: 28px;
