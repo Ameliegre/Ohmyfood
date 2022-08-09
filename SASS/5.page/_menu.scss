@@ -5,36 +5,55 @@ main img {
 }
 
 .menu-body {
-   width: 100%;
-   background-color: $colour-background;
+   background-color: $color-background;
    border-radius: 52px 52px 0px 0px;
    margin-bottom: 30px;
    margin-top:-60px;
+   @include desktop-only {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   &_card {
+      margin: 0px 12px;
+      @include desktop-only {
+         width: 30%;
+      }
+   }
    &_title {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      margin:30px 24px 0px 24px;
+      margin:30px 34px 0px 12px;
+      @include desktop-only {
+         width: 100%;
+      }
    }
    &_card_title {
       width: 10%;
       text-transform: uppercase;
-      border-bottom: 3px solid $colour-new;
-      margin: 40px 24px 0px 24px;
+      border-bottom: 3px solid $color-new;
+      margin: 40px 24px 0px 0px;
       padding-bottom: 6px;
    }
    &_card_text {
-      background-color: $colour-white;
-      margin: 15px;
-      padding:15px 20px 15px 10px;
+      background-color: $color-white;
       display: flex;
       flex-direction: row;
       justify-content:space-between;
       align-items: center;
+      div {
+         padding-left: 12px;
+      }
+      @include desktop-only {
+         height: 100px;
+      }
    }
    strong {
       align-self: flex-end;
+      padding: 0px 15px 8px 0px;
    }
 }
 

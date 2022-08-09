@@ -16,7 +16,7 @@
 }
 
 .filter-container {
-    background-color: $colour-white;
+    background-color: $color-white;
     @include container;
     height: 430px;
     @include desktop-only {

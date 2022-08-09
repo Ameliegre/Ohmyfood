@@ -1,6 +1,6 @@
 @mixin main_btn {
-    background: linear-gradient(to bottom right, $colour-secondary,$colour-primary);
-    color:$colour-background;
+    background: linear-gradient(to bottom right, $color-secondary,$color-primary);
+    color:$color-background;
     padding: 15px 20px;
     border-radius: 34px;
     border: transparent;
@@ -14,7 +14,7 @@
     height: 70px;
     margin: 10px 0px;
     border: transparent;
-    border-radius: 24px;
+    border-radius: 16px;
     box-shadow: 4px 8px 9px RGB(217 217 217);
 }
 

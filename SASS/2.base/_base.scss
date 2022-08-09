@@ -3,7 +3,10 @@
 }
 
 body {
-    background-color: $colour-background;
+    background-color: $color-background;
+    @include tablet-only {
+        margin: 0% 10%;
+    }
     @include desktop-only {
         margin: 0% 8%;
     }
