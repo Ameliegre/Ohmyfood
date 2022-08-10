@@ -20,7 +20,7 @@
     @include container;
     height: 430px;
     @include desktop-only {
-        height:350px;
+        height:250px;
     }
 }
 

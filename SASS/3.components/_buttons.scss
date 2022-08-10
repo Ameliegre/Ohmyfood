@@ -1,13 +1,17 @@
 .main_btn {
-    @include main_btn
+    @include main_btn;
+}
+
+.main_btn:hover {
+    box-shadow: 6px 6px 9px rgb(182 182 182);
+    filter: brightness(110%);
 }
 
 .filter-container_btn {
     @include filter_btn;
     @include desktop-only {
         padding-right: 20px;
-        width: 45%;
-
+        width: 30%;
     }
 }
 

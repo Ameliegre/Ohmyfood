@@ -6,11 +6,6 @@
 body {
   background-color: rgb(246, 246, 246);
 }
-@media screen and (min-width: 426px) and (max-width: 1023px) {
-  body {
-    margin: 0% 10%;
-  }
-}
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   body {
     margin: 0% 8%;
@@ -100,6 +95,12 @@ p {
   border: transparent;
   align-self: center;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.main_btn:hover {
+  box-shadow: 6px 6px 9px rgb(182, 182, 182);
+  filter: brightness(110%);
 }
 
 .filter-container_btn {
@@ -114,7 +115,7 @@ p {
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   .filter-container_btn {
     padding-right: 20px;
-    width: 45%;
+    width: 30%;
   }
 }
 
@@ -205,7 +206,7 @@ p {
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   .filter-container {
-    height: 350px;
+    height: 250px;
   }
 }
 
