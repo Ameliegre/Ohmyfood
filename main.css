@@ -324,6 +324,9 @@ footer ul li a {
   padding-left: 20px;
 }
 
+.filter-container .all-filter_btn {
+  cursor: pointer;
+}
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   .filter-container .all-filter_btn {
     display: flex;
@@ -359,6 +362,7 @@ footer ul li a {
   margin-bottom: 20px;
   box-shadow: 4px 8px 9px RGB(217 217 217);
   position: relative;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   .restaurant-card {
@@ -396,6 +400,27 @@ footer ul li a {
   font-weight: 100;
 }
 
+.fa-heart:active::before {
+  font-weight: bold;
+  background: linear-gradient(#9356dc, #FF79DA);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: color 0.4s;
+  transition-timing-function: cubic-bezier(0, 1.63, 0, 0.42);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .fa-heart:hover::before {
+    font-weight: bold;
+    background: linear-gradient(#9356dc, #FF79DA);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: color 0.5s;
+    transition-timing-function: cubic-bezier(0, 1.63, 0, 0.42);
+    cursor: pointer;
+  }
+}
 /*Fin Page accueil*/
 main img {
   height: 300px;

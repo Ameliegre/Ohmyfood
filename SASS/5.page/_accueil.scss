@@ -26,8 +26,9 @@
     }
 }
 
-.filter-container{
+.filter-container {
     .all-filter_btn {
+        cursor: pointer;
         @include desktop-only{
         display: flex;
         flex-wrap: wrap;
@@ -63,6 +64,7 @@
     margin-bottom: 20px;
     box-shadow: 4px 8px 9px RGB(217 217 217);
     position: relative;
+    cursor: pointer;
     @include desktop-only {
         width:45%;
     }
@@ -94,6 +96,28 @@
         margin-right: 10px;
         font-weight: 100;
         }
+    }
+}
+
+.fa-heart:active::before {
+    font-weight: bold;
+    background: linear-gradient($color-primary,$color-secondary);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: color 0.4s;
+    transition-timing-function: cubic-bezier(0,1.63,0,.42);
+    cursor: pointer;
+}
+
+@include desktop-only {
+    .fa-heart:hover::before {
+        font-weight: bold;
+        background: linear-gradient($color-primary,$color-secondary);
+        color: transparent;
+        -webkit-background-clip: text;
+        transition: color 0.5s;
+        transition-timing-function: cubic-bezier(0,1.63,0,.42);
+        cursor: pointer;
     }
 }
 

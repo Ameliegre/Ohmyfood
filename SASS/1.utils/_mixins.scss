@@ -39,7 +39,3 @@
         @content;
     }
 }
-
-@mixin background-btn {
-    background: linear-gradient(to bottom right, $color-secondary,$color-primary); 
-}
