@@ -102,7 +102,7 @@
     background: linear-gradient($color-primary,$color-secondary);
     color: transparent;
     background-clip: text;
-    transition: color 0.2s;
+    transition: color 1s;
     /*transition-timing-function: cubic-bezier(0,1.63,0,.42);*/
     transition-timing-function: cubic-bezier(.34,1.24,1,1.44);
     cursor: pointer;
@@ -114,11 +114,12 @@
         background: linear-gradient($color-primary,$color-secondary);
         color: transparent;
         background-clip: text;
-        transition: color 0.5s;
-        transition-timing-function: cubic-bezier(0,1.63,0,.42);
+        transition: color 0.4s;
+        /*transition-timing-function: cubic-bezier(0,1.63,0,.42);*/
         cursor: pointer;
     }
 }
+
 
 
 @keyframes loader {
