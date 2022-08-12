@@ -405,10 +405,6 @@ footer ul li a {
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  transition: color 1s;
-  /*transition-timing-function: cubic-bezier(0,1.63,0,.42);*/
-  transition-timing-function: cubic-bezier(0.34, 1.24, 1, 1.44);
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
@@ -418,9 +414,6 @@ footer ul li a {
     color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    transition: color 0.4s;
-    /*transition-timing-function: cubic-bezier(0,1.63,0,.42);*/
-    cursor: pointer;
   }
 }
 @-webkit-keyframes loader {
