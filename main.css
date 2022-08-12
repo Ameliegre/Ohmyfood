@@ -8,7 +8,7 @@ body {
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   body {
-    margin: 0% 8%;
+    margin: 0% 4%;
   }
 }
 
@@ -697,6 +697,8 @@ main img {
   justify-content: space-between;
   align-items: center;
   opacity: 0;
+  overflow: hidden;
+  cursor: pointer;
 }
 .menu-body_card_text div {
   padding-left: 12px;
@@ -706,9 +708,51 @@ main img {
     height: 100px;
   }
 }
+.menu-body_card_text:hover .check {
+  right: 0;
+}
+.menu-body_card_text:hover .check i {
+  transform: rotate(360deg);
+  transition-duration: 0.3s;
+}
+.menu-body_card_text:hover strong {
+  right: 82px;
+}
+.menu-body_card_text:hover div h3 + p {
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .menu-body strong {
   align-self: flex-end;
   padding: 0px 15px 8px 0px;
+  position: absolute;
+  right: 4%;
+  transition: 0.3s all;
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .menu-body strong {
+    right: 0%;
+    bottom: 16%;
+  }
+}
+.menu-body .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgb(142, 222, 202);
+  height: 100%;
+  width: 90px;
+  right: -90px;
+  padding: 0;
+  transition: 0.3s all;
+  border-radius: 0px 16px 16px 0px;
+}
+.menu-body .check i {
+  color: #fff;
+  font-size: 20px;
 }
 
 .main_btn span {

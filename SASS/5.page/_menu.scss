@@ -45,16 +45,59 @@ main img {
       justify-content:space-between;
       align-items: center;
       opacity: 0;
+      overflow: hidden;
+      cursor: pointer; 
       div {
          padding-left: 12px;
       }
       @include desktop-only {
          height: 100px;
       }
+      &:hover .check {
+         right: 0;
+      }
+      &:hover .check i {
+         transform: rotate(360deg);
+         transition-duration: 0.3s;
+      }
+      &:hover strong {
+         right:82px;
+      }
+      &:hover div h3 + p{
+         width:80%;
+         text-overflow: ellipsis;
+         overflow: hidden;
+         white-space:nowrap; 
+      }
    }
    strong {
       align-self: flex-end;
       padding: 0px 15px 8px 0px;
+      position: absolute;
+      right: 4%;
+      transition: 0.3s all;
+      @include desktop-only{
+         right: 0%;
+         bottom:16%;
+      }
+   }
+      
+   .check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background: $color-new;
+      height: 100%;
+      width:90px;
+      right:-90px;
+      padding: 0;
+      transition: 0.3s all;
+      border-radius:0px 16px 16px 0px;
+      i {
+         color:$color-white;
+         font-size: 20px;
+      }
    }
 }
 
