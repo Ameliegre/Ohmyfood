@@ -39,3 +39,27 @@
         @content;
     }
 }
+
+@mixin heart {
+    .favorite {
+        cursor: pointer;
+        opacity: 0%;
+        background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: opacity 0.3s ease-in-out;
+        position: absolute;
+        right: 16px;
+        &:hover {
+          opacity: 100%;
+          .favorite_full {
+            color: #9356dc;
+          }  
+        }
+      }
+      .favorite_full {
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+      }
+}

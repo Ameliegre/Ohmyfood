@@ -1,276 +1,275 @@
 #location {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(230 230 230);
-    box-shadow: 0px 4px 8px rgb(202 202 202) inset;
-    @include tablet-only {
-        justify-content: flex-end;
-        background-color: $color-white;
-        box-shadow:0px 4px 8px $color-white;
-        padding-right: 20px;
-    }
-    @include desktop-only {
-        justify-content: flex-end;
-        background-color: $color-white;
-        box-shadow:0px 4px 8px $color-white;
-        padding-right: 60px;
-    }
-    p {
-        padding-left: 20px;
-    }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(230 230 230);
+  box-shadow: 0px 4px 8px rgb(202 202 202) inset;
+  @include tablet-only {
+      justify-content: flex-end;
+      background-color: $color-white;
+      box-shadow:0px 4px 8px $color-white;
+      padding-right: 20px;
+  }
+  @include desktop-only {
+      justify-content: flex-end;
+      background-color: $color-white;
+      box-shadow:0px 4px 8px $color-white;
+      padding-right: 60px;
+  }
+  p {
+      padding-left: 20px;
+  }
 }
 
 .filter-container {
-    .all-filter_btn {
-        cursor: pointer;
-        @include desktop-only{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin:0px 50px;
-        } 
-    }
-    span {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    &_btn_number{
-        color:$color-white;
-        background-color: $color-primary;
-        padding: 5px 9px;
-        border-radius: 15px;
-        margin-left: -10px;
-    }
-    &_btn_icon {
-        color: rgb(115 115 115);
-        font-size: 20px;
-        margin: 0px 20px;
-        .fa-ellipsis-vertical{
-            margin-right: 2px;
-        }
-    }
+  .all-filter_btn {
+      cursor: pointer;
+      @include desktop-only{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin:0px 50px;
+      } 
+  }
+  span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  &_btn_number{
+      color:$color-white;
+      background-color: $color-primary;
+      padding: 5px 9px;
+      border-radius: 15px;
+      margin-left: -10px;
+  }
+  &_btn_icon {
+      color: rgb(115 115 115);
+      font-size: 20px;
+      margin: 0px 20px;
+      .fa-ellipsis-vertical{
+          margin-right: 2px;
+      }
+  }
 }
 
 .restaurant-card{
-    background-color: $color-white;
-    border-radius: 24px;
-    margin-bottom: 20px;
-    box-shadow: 4px 8px 9px RGB(217 217 217);
-    position: relative;
-    cursor: pointer;
-    @include desktop-only {
-        width:45%;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 24px 24px 0px 0px ;  
-    }
-    &_new {
-        position: absolute;
-        top:18px;
-        right: 16px;
-        background-color: $color-new;
-    }
-    &_body {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding:14px 16px;
-        &_icon {
-        font-size: 28px;
-        margin-top: -12px;
-        margin-right: 10px;
-        font-weight: 100;
-        }
-    }
+  background-color: $color-white;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  box-shadow: 4px 8px 9px RGB(217 217 217);
+  position: relative;
+  cursor: pointer;
+  @include desktop-only {
+      width:45%;
+  }
+  a {
+      text-decoration: none;
+      color: black;
+  }
+  img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 24px 24px 0px 0px ;  
+  }
+  &_new {
+      position: absolute;
+      top:18px;
+      right: 16px;
+      background-color: $color-new;
+  }
+  &_body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding:14px 16px;
+      &_icon {
+      font-size: 28px;
+      margin-top: -12px;
+      margin-right: 10px;
+      font-weight: 100;
+      }
+      @include heart;
+  }
 }
 
 
-.fa-heart:active::before {
-    font-weight: bold;
-    background: linear-gradient($color-primary,$color-secondary);
-    color: transparent;
-    background-clip: text;
-}
+
+  
+
 
 @include desktop-only {
-    .fa-heart:hover::before {
-        font-weight: bold;
-        background: linear-gradient($color-primary,$color-secondary);
-        color: transparent;
-        background-clip: text;
-    }
+  .fa-heart:hover::before {
+      font-weight: bold;
+      background: linear-gradient($color-primary,$color-secondary);
+      color: transparent;
+      background-clip: text;
+  }
 }
 
 
 
 @keyframes loader {
-  0% {
-    width: 10%;
-    transform: rotate(0deg);
-  }
-  10% {
-    left: 0%;
-    transform: rotate(0deg);
-  }
-  20% {
-    width: 0%;
-    left: 20%;
-  }
-  30% {
-    width: 25%;
-  }
-  50% {
-    left: 15%;
-    width: 35%;
-  }
-  70% {
-    width: 30%;
-    left: 18%;
-    transform: rotate(240deg);
-  }
-  90% {
-    width: 30%;
-    left: 10%;
-  }
-  100% {
-    width: 2%;
-    left: 25%;
-    transform: rotate(360deg);
-  }
+0% {
+  width: 10%;
+  transform: rotate(0deg);
+}
+10% {
+  left: 0%;
+  transform: rotate(0deg);
+}
+20% {
+  width: 0%;
+  left: 20%;
+}
+30% {
+  width: 25%;
+}
+50% {
+  left: 15%;
+  width: 35%;
+}
+70% {
+  width: 30%;
+  left: 18%;
+  transform: rotate(240deg);
+}
+90% {
+  width: 30%;
+  left: 10%;
+}
+100% {
+  width: 2%;
+  left: 25%;
+  transform: rotate(360deg);
+}
 }
 
 @keyframes pan {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: top right;
-  }
-  10% {
-    transform: rotate(-2deg);
-    transform-origin: top right;
-  }
-  50% {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+0% {
+  transform: rotate(0deg);
+  transform-origin: top right;
+}
+10% {
+  transform: rotate(-2deg);
+  transform-origin: top right;
+}
+50% {
+  transform: rotate(15deg);
+}
+100% {
+  transform: rotate(0deg);
+}
 }
 
 @keyframes shadow {
-  0% {
-    width: 30%;
-  }
-  50% {
-    width: 40%;
-    left: 20px;
-  }
-  100% {
-    width: 30%;
-  }
+0% {
+  width: 30%;
+}
+50% {
+  width: 40%;
+  left: 20px;
+}
+100% {
+  width: 30%;
+}
 }
 
 @keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
+0% {
+  opacity: 1;
+}
 
-  90% {
-    opacity: 1;
-  }
+90% {
+  opacity: 1;
+}
 
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
+100% {
+  opacity: 0;
+  pointer-events: none;
+}
 }
 
 .overlay {
-  background-color: $color-background;
-  position:fixed;
-  width: 100%;
-  height: 100vh;
-  z-index:9999;
-  top:0;
-  left: 0;;
-  animation: fade-out 3s forwards;
+background-color: $color-background;
+position:fixed;
+width: 100%;
+height: 100vh;
+z-index:9999;
+top:0;
+left: 0;;
+animation: fade-out 3s forwards;
 }
 
 .text-loader {
-  margin-top: 50px;
-  margin-left:-100px;
-  width: 500px;
-  font-size: 25px;
-  font-family: 'roboto', sans-serif;
+margin-top: 50px;
+margin-left:-100px;
+width: 500px;
+font-size: 25px;
+font-family: 'roboto', sans-serif;
 }
 
 .pan-loader {
-  width: 180px;
-  height: 180px;
-  right:25%;
-  margin: 100px auto;
-  position: absolute;
-  @include tablet-only {
-    right:35%;
-  }
-  @include desktop-only {
-    right: 45%;
-  }
-  .loader {
-    position: relative;
-    top: 10%;
-    left: 0;
-    z-index: -1;
-    width: 60%;
-    height: 45%;
-    border: 10px solid transparent;
-    border-bottom: 10px solid $color-tertiary;
-    border-radius: 50%;
-    animation: loader $timing infinite;
-    animation-timing-function: linear;
-  }
-  .pan-container {
-    display:flex;
-    width: 100%;
-    animation: pan $timing infinite;
-  }
-  .pan {
-    width: 60%;
-    height: 20px;
-    background: linear-gradient($color-secondary, $color-primary);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-  .handle {
-    width: 40%;
-    height: 10px;
-    background: linear-gradient($color-secondary, $color-primary);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  
-  .shadow {
-    position: relative;
-    top: 15%;
-    left: 15%;
-    width: 30%;
-    height: 8px;
-    background: $color-shadow;
-    border-radius: 20px;
-    animation: shadow $timing infinite;
-  }
+width: 180px;
+height: 180px;
+right:25%;
+margin: 100px auto;
+position: absolute;
+@include tablet-only {
+  right:35%;
 }
+@include desktop-only {
+  right: 45%;
+}
+.loader {
+  position: relative;
+  top: 10%;
+  left: 0;
+  z-index: -1;
+  width: 60%;
+  height: 45%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid $color-tertiary;
+  border-radius: 50%;
+  animation: loader $timing infinite;
+  animation-timing-function: linear;
+}
+.pan-container {
+  display:flex;
+  width: 100%;
+  animation: pan $timing infinite;
+}
+.pan {
+  width: 60%;
+  height: 20px;
+  background: linear-gradient($color-secondary, $color-primary);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.handle {
+  width: 40%;
+  height: 10px;
+  background: linear-gradient($color-secondary, $color-primary);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.shadow {
+  position: relative;
+  top: 15%;
+  left: 15%;
+  width: 30%;
+  height: 8px;
+  background: $color-shadow;
+  border-radius: 20px;
+  animation: shadow $timing infinite;
+}
+}
+

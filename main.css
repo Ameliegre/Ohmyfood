@@ -410,13 +410,26 @@ footer ul li a {
   margin-right: 10px;
   font-weight: 100;
 }
-
-.fa-heart:active::before {
-  font-weight: bold;
-  background: linear-gradient(#9356dc, #FF79DA);
-  color: transparent;
+.restaurant-card_body .favorite {
+  cursor: pointer;
+  opacity: 0%;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  right: 16px;
+}
+.restaurant-card_body .favorite:hover {
+  opacity: 100%;
+}
+.restaurant-card_body .favorite:hover .favorite_full {
+  color: #9356dc;
+}
+.restaurant-card_body .favorite_full {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
@@ -699,6 +712,30 @@ main img {
   align-items: center;
   justify-content: space-between;
   margin: 30px 34px 0px 12px;
+}
+.menu-body_title .favorite {
+  cursor: pointer;
+  opacity: 0%;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  right: 16px;
+}
+.menu-body_title .favorite:hover {
+  opacity: 100%;
+}
+.menu-body_title .favorite:hover .favorite_full {
+  color: #9356dc;
+}
+.menu-body_title .favorite_full {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.menu-body_title .favorite {
+  right: 34px;
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   .menu-body_title {
