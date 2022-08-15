@@ -204,24 +204,30 @@
   height: 100vh;
   z-index:9999;
   top:0;
-  left:0;
+  left: 0;;
   animation: fade-out 3s forwards;
 }
 
 .text-loader {
   margin-top: 50px;
-  margin-left:-150px;
+  margin-left:-100px;
   width: 500px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'roboto', sans-serif;
 }
 
 .pan-loader {
   width: 180px;
   height: 180px;
-  right:45%;
+  right:25%;
   margin: 100px auto;
   position: absolute;
+  @include tablet-only {
+    right:35%;
+  }
+  @include desktop-only {
+    right: 45%;
+  }
   .loader {
     position: relative;
     top: 10%;

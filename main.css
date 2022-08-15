@@ -575,18 +575,28 @@ footer ul li a {
 
 .text-loader {
   margin-top: 50px;
-  margin-left: -150px;
+  margin-left: -100px;
   width: 500px;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "roboto", sans-serif;
 }
 
 .pan-loader {
   width: 180px;
   height: 180px;
-  right: 45%;
+  right: 25%;
   margin: 100px auto;
   position: absolute;
+}
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  .pan-loader {
+    right: 35%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .pan-loader {
+    right: 45%;
+  }
 }
 .pan-loader .loader {
   position: relative;
