@@ -6,11 +6,6 @@
 body {
   background-color: rgb(246, 246, 246);
 }
-@media screen and (min-width: 1024px) and (max-width: 3000px) {
-  body {
-    margin: 0% 4%;
-  }
-}
 
 h2 {
   padding: 45px 0px 20px 0px;
@@ -702,6 +697,19 @@ main img {
 }
 .menu-body_card_text div {
   padding-left: 12px;
+  width: 100%;
+}
+.menu-body_card_text div p {
+  width: 75%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-body_card_text div h3 {
+  width: 85%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) and (max-width: 3000px) {
   .menu-body_card_text {
@@ -719,10 +727,15 @@ main img {
   right: 82px;
 }
 .menu-body_card_text:hover div h3 + p {
-  width: 80%;
+  width: 70%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+@media screen and (min-width: 1024px) and (max-width: 3000px) {
+  .menu-body_card_text:hover div h3 + p {
+    width: 100%;
+  }
 }
 .menu-body strong {
   align-self: flex-end;

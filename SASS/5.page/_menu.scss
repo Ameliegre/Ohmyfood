@@ -49,6 +49,20 @@ main img {
       cursor: pointer; 
       div {
          padding-left: 12px;
+         width: 100%;
+         p {
+            width: 75%;
+            text-overflow: ellipsis;
+            white-space:nowrap; 
+            overflow: hidden;
+         }
+         h3 {
+            width: 85%;
+            text-overflow: ellipsis;
+            white-space:nowrap; 
+            overflow: hidden;
+            
+         }
       }
       @include desktop-only {
          height: 100px;
@@ -64,10 +78,13 @@ main img {
          right:82px;
       }
       &:hover div h3 + p{
-         width:80%;
+         width:70%;
          text-overflow: ellipsis;
          overflow: hidden;
          white-space:nowrap; 
+         @include desktop-only {
+         width: 100%;
+         }
       }
    }
    strong {

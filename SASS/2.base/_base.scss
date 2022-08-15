@@ -4,9 +4,6 @@
 
 body {
     background-color: $color-background;
-    @include desktop-only {
-        margin: 0% 4%;
-    }
 }
 
 h2 {
