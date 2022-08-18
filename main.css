@@ -21,14 +21,14 @@ h1 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 6px;
   font-weight: 500;
 }
 
 p {
   font-weight: 100;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #location {
@@ -767,16 +767,14 @@ main img {
 }
 .menu-body_card_text div {
   padding-left: 12px;
-  width: 100%;
+  width: 85%;
 }
 .menu-body_card_text div p {
-  width: 75%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu-body_card_text div h3 {
-  width: 85%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
