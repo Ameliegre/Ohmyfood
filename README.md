@@ -1,4 +1,6 @@
-# Ohmyfood.io Projet réalisé dans le cadre de la formation en ligne Developpeur Web chez Openclassrooms
+# Ohmyfood.io 
+
+Projet réalisé dans le cadre de la formation en ligne Developpeur Web chez Openclassrooms
 
 Type de projet : Intégration & Animations HTML/CSS 
 
